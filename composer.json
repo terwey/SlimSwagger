@@ -11,5 +11,10 @@
             "name": "Yorick Terweijden",
             "email": "terwey@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "terwey\\": "src"
+        }
+    }
 }
