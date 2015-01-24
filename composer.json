@@ -1,0 +1,14 @@
+{
+    "name": "twisted/slim-swagger",
+    "description": "Slim Middleware for generating Swagger documentation on the fly with Swagger-PHP",
+    "license": "MIT",
+    "require": {
+        "zircote/swagger-php": "~0.9"
+    },
+    "authors": [
+        {
+            "name": "Yorick Terweijden",
+            "email": "terwey@gmail.com"
+        }
+    ]
+}
