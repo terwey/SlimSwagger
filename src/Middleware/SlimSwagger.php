@@ -24,7 +24,7 @@ class SlimSwagger extends \Slim\Middleware
         );
         $defaultOptions = array(
             'baseDir' => __DIR__.'/../',
-            'ignoreDir' => null
+            'ignoreDir' => array()
         );
         $this->swaggerOptions = array_merge($defaults, $swaggerSettings);
         $this->options = array_merge($defaultOptions, $options);
@@ -44,7 +44,7 @@ class SlimSwagger extends \Slim\Middleware
     public function apiDocs()
     {
         $this->app->contentType("application/json");
-        $swagger = new Swagger($this->options['baseDir'], $this->options['ignoreDir']);
+        $swagger = new \Swagger\Swagger($this->options['baseDir'], $this->options['ignoreDir']);
         $resourceList = $swagger->getResourceList($this->swaggerOptions);
         
         echo $resourceList;
@@ -54,7 +54,7 @@ class SlimSwagger extends \Slim\Middleware
     public function apiDocsForResource($resource, $level1 = '', $level2 = '', $level3 = '')
     {
         $this->app->contentType("application/json");
-        $swagger = new Swagger($this->options['baseDir'], $this->options['ignoreDir']);
+        $swagger = new \Swagger\Swagger($this->options['baseDir'], $this->options['ignoreDir']);
         $resource = '/'.str_replace('-', '/', $resource);
         echo $swagger->getResource($resource, $this->swaggerOptions);
     }
