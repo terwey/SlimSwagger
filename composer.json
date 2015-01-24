@@ -1,5 +1,5 @@
 {
-    "name": "twisted/slim-swagger",
+    "name": "terwey/slim-swagger",
     "description": "Slim Middleware for generating Swagger documentation on the fly with Swagger-PHP",
     "license": "MIT",
     "require": {
