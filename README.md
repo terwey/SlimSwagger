@@ -19,3 +19,23 @@ Also copy over ```swagger-ui.min.js``` to the ```/public/lib``` directory.
 
 ## Template
 I've provided a Twig template in the ```/templates``` directory. Copy this over to your Slim application. If you want to use Twig also install [Slim Views](https://github.com/codeguy/Slim-Views).
+
+# Docs
+The SlimSwagger class takes 2 parameters. The first one is the ```$swaggerSettings``` array, please see the Swagger-PHP docs for more info.
+```
+$swaggerSettings = array(
+    'output' => 'json',
+    'apiVersion' => $defaultApiVersion,
+    'swaggerVersion' => $defaultSwaggerVersion,
+    'defaultSwaggerVersion' => $resourceList['swaggerVersion'],
+    'defaultBasePath' => $defaultBasePath
+);
+```
+
+The second one is the ```$options``` array.
+```
+$options = array(
+    'baseDir' => __DIR__.'/../',
+    'ignoreDir' => array()
+);
+```
