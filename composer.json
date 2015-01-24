@@ -2,6 +2,7 @@
     "name": "terwey/slim-swagger",
     "description": "Slim Middleware for generating Swagger documentation on the fly with Swagger-PHP",
     "license": "MIT",
+    "version": "0.0.1",
     "require": {
         "zircote/swagger-php": "~0.9"
     },

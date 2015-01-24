@@ -1,6 +1,12 @@
 # SlimSwagger
 A Slim Middleware for generating Swagger documentation on the fly with Swagger-PHP.
 
+## Installation
+Easiest is using Composer:
+```
+composer require terwey/slim-swagger
+```
+
 ## Resources
 For now you'll have to grab a release of [Swagger-UI](https://github.com/swagger-api/swagger-ui) and copy ```/lib``` and ```/css``` to your ```/public``` directory.
 Also copy over ```swagger-ui.min.js``` to the ```/public/lib``` directory.
